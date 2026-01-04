@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --absolute-black: #000000;
+    --jet-black: #0B0B0B;
+    --soft-cream: #F2EBDD;
+    --paper-white: #FAFAFA;
+    --charcoal-grey: #202020;
+    --accent-gold: #C9B27A;
+  }
+
+  * {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply antialiased bg-black;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    letter-spacing: -0.01em;
+    color: #F2EBDD;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  * {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+      radial-gradient(ellipse at center, rgba(32, 32, 32, 0.4) 0%, transparent 70%),
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #FAFAFA;
+  }
+
+  h1 {
+    font-size: 120px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+  }
+
+  .serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .content-wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #0B0B0B;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #C9B27A;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #D4C499;
+  }
+
+  .slider::-webkit-slider-thumb {
+    @apply appearance-none w-4 h-4 cursor-pointer;
+    background: #F2EBDD;
+  }
+
+  .slider::-moz-range-thumb {
+    @apply w-4 h-4 cursor-pointer border-0;
+    background: #F2EBDD;
+  }
+
+  .btn-primary {
+    @apply px-10 py-4 font-medium tracking-widest uppercase text-xs transition-all;
+    background: #000000;
+    color: #F2EBDD;
+    border: 1px solid #C9B27A;
+    transition-duration: 600ms;
+    box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.4),
+      0 4px 16px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(201, 178, 122, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 0%, rgba(201, 178, 122, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 600ms ease;
+  }
+
+  .btn-primary:hover::before {
+    opacity: 1;
+  }
+
+  .btn-primary:hover {
+    background: #0B0B0B;
+    border-color: #D4C499;
+    box-shadow:
+      0 4px 16px rgba(0, 0, 0, 0.5),
+      0 8px 32px rgba(0, 0, 0, 0.3),
+      0 0 40px rgba(201, 178, 122, 0.2),
+      inset 0 1px 0 rgba(201, 178, 122, 0.2);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    @apply px-10 py-4 bg-transparent font-medium tracking-widest uppercase text-xs transition-all;
+    color: #F2EBDD;
+    border: 1px solid #F2EBDD;
+    transition-duration: 600ms;
+  }
+
+  .btn-secondary:hover {
+    border-color: #C9B27A;
+    color: #C9B27A;
+  }
+
+  .card-luxury {
+    background: linear-gradient(135deg, #0B0B0B 0%, #202020 100%);
+    border: 1px solid #202020;
+    box-shadow:
+      inset 0 1px 0 rgba(242, 235, 221, 0.03),
+      0 2px 8px rgba(0, 0, 0, 0.4),
+      0 4px 16px rgba(0, 0, 0, 0.3),
+      0 8px 32px rgba(0, 0, 0, 0.2);
+    transition: all 600ms ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-luxury::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(201, 178, 122, 0.03) 50%,
+      transparent 100%
+    );
+    transition: left 800ms ease;
+  }
+
+  .card-luxury:hover::before {
+    left: 100%;
+  }
+
+  .card-luxury:hover {
+    transform: translateY(-3px);
+    border-color: #2A2A2A;
+    box-shadow:
+      inset 0 1px 0 rgba(242, 235, 221, 0.05),
+      0 4px 16px rgba(0, 0, 0, 0.5),
+      0 8px 32px rgba(0, 0, 0, 0.4),
+      0 16px 64px rgba(0, 0, 0, 0.3),
+      0 0 40px rgba(201, 178, 122, 0.05);
+  }
+
+  .card-cream {
+    background: #F2EBDD;
+    color: #000000;
+    border: 1px solid #C9B27A;
+  }
+
+  .gold-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, #C9B27A 50%, transparent 100%);
+  }
+
+  .double-border {
+    border: 1px solid #202020;
+    box-shadow: inset 0 0 0 1px rgba(201, 178, 122, 0.2);
+  }
+
+  .label-gold {
+    color: #C9B27A;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+  }
+}
