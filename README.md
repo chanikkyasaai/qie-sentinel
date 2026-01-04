@@ -1,188 +1,224 @@
 # QIE Sentinel
 
-**Autonomous AI Trading Intelligence on QIE Blockchain**
+**Autonomous AI Trading Intelligence — Built Natively for QIE**
 
 ---
 
-## Overview
+## What This Project Proves
 
-**QIE Sentinel** is a fully autonomous, on-chain trading agent that combines **AI-driven decision intelligence**, **oracle-validated execution**, and **risk-governed capital management** on the QIE blockchain.
+**QIE Sentinel is not a demo, a simulation, or a scripted bot.**  
+It is a **live, autonomous AI agent** that operates capital on-chain — continuously, independently, and safely.
 
-It is not a simulator, backtest, or manual bot.  
-QIE Sentinel runs continuously, evaluates live market conditions, makes independent decisions, and executes real on-chain transactions with full transparency and control.
+This project demonstrates a core belief of the QIE ecosystem:
 
-Built for the **QIE Blockchain Hackathon 2025**, this project demonstrates how autonomous AI agents can safely operate capital on decentralized infrastructure.
+> *When blockchain is fast, cheap, and final — AI agents stop being theoretical and start becoming operational.*
 
----
-
-## Why QIE Sentinel Matters
-
-- **AI × Blockchain (Core Theme)**  
-  An autonomous agent that reasons, decides, executes, and self-evaluates on-chain.
-
-- **DeFi Without Borders**  
-  Continuous, permissionless trading without centralized control.
-
-- **Oracles & Real-World Data**  
-  Oracle-validated pricing ensures fair execution and prevents manipulation.
-
-- **Performance on QIE**  
-  Fast finality and near-zero fees enable high-frequency autonomous operation.
+QIE Sentinel exists because QIE makes it possible.
 
 ---
 
-## System Architecture (High-Level)
+## One-Line Summary (For Judges)
 
-**Four-layer autonomous architecture:**
-
-1. **AI Decision Engine**  
-   Multi-signal strategy evaluation with confidence scoring
-
-2. **Risk & Governance Layer**  
-   Pre-trade validation, exposure limits, kill-switch control
-
-3. **On-Chain Execution Layer**  
-   Smart contracts executing validated trades via oracle prices
-
-4. **Frontend Control Plane**  
-   Real-time transparency into agent behavior and decisions
+> **QIE Sentinel is a self-governing AI trading agent that reasons, executes, and self-evaluates entirely on-chain using QIE’s speed, oracle infrastructure, and near-zero fees.**
 
 ---
 
-## Live System Screenshots
+## Why This Wins on QIE (Not Elsewhere)
 
-> All screenshots are from a **running system on QIE Testnet**  
-> showing live cycles, signals, executions, and risk enforcement.
+Most blockchains **cannot support autonomous agents**:
+- Fees punish frequent decision cycles
+- Finality delays break feedback loops
+- Oracles are slow or unreliable
+- Risk management is external or manual
+
+**QIE removes those constraints.**
+
+QIE Sentinel exploits this by running:
+- Continuous decision cycles
+- Frequent oracle-validated executions
+- Real-time risk enforcement
+- Live AI self-reflection
+
+This system would be **economically impractical** or **architecturally fragile** on other chains.
 
 ---
 
-### 1. System Status & Agent Lifecycle
+## Core Innovation
 
+### Autonomous Intelligence (Not Automation)
+
+QIE Sentinel does **not** follow static rules.
+
+It:
+1. Collects live market data
+2. Evaluates multiple strategy signals
+3. Computes confidence and pressure scores
+4. Validates risk constraints
+5. Executes on-chain trades
+6. Reflects on outcomes to adjust future behavior
+
+All without manual triggers.
+
+---
+
+### Risk-First Autonomy (The Moat)
+
+Most trading bots fail because they optimize **execution**, not **survival**.
+
+QIE Sentinel enforces:
+- Pre-trade balance validation
+- Allowance verification
+- Exposure limits
+- Consecutive failure tracking
+- Kill-switch governance
+
+If safety constraints fail, **execution does not happen**.
+
+This is the difference between *automation* and *autonomous systems*.
+
+---
+
+### Oracle-Validated Execution
+
+Every trade:
+- Pulls price data from oracles
+- Validates execution bounds
+- Rejects unsafe price deviations
+- Records immutable on-chain proof
+
+This bridges **real-world data → AI decision → on-chain execution** cleanly.
+
+---
+
+## System Architecture (Why It’s Hard to Copy)
+
+**Four tightly coupled layers:**
+
+### 1. AI Decision Layer
+- Multi-signal technical analysis
+- Confidence scoring (not binary signals)
+- Decision pressure modeling
+- Action window enforcement
+
+### 2. Risk & Governance Layer
+- Capital sufficiency checks
+- Allowance automation
+- Kill-switch enforcement
+- Failure isolation
+
+### 3. On-Chain Execution Layer
+- Vault-based capital custody
+- Executor-controlled trade logic
+- Oracle price validation
+- Immutable transaction history
+
+### 4. Transparency Layer (Frontend)
+- Live agent state
+- Decision rationale visibility
+- Post-trade reflection
+- Risk health monitoring
+
+This architecture is **cohesive**, not modular glue.
+
+---
+
+## Live System Proof (Screenshots)
+
+> All screenshots are captured from a **running agent on QIE Testnet**
+
+### System Status & Autonomous Lifecycle
 ![System Status](assets/screenshots/12.png)
 
-**What this shows:**
-- Autonomous agent is **RUNNING**
-- Continuous cycle heartbeat (live trading loop)
-- Current asset, strategy, uptime
-- Internal AI lifecycle stages:
-  - Market data collection  
-  - Strategy evaluation  
-  - Signal generation  
-  - Risk validation  
-  - On-chain execution  
-
-This confirms the agent is **actively operating**, not idle or simulated.
+Shows continuous cycles, strategy execution, and AI lifecycle stages — proving the agent is *alive*, not staged.
 
 ---
 
-### 2. Decision Intelligence (AI Reasoning)
-
+### Decision Intelligence (AI Reasoning)
 ![Decision Intelligence](assets/screenshots/13.png)
 
-**What this shows:**
-- AI-generated BUY/SELL signals
-- Confidence scoring (e.g. 75%)
-- Decision pressure indicator
-- Contributing signals:
-  - Price action confirmation
-  - Momentum alignment
-  - Risk limits satisfied
-
-This is the **core AI layer**, making decisions independently — not hardcoded rules.
+Displays confidence scoring, decision pressure, and contributing signals — showing **why** actions occur, not just *what* happened.
 
 ---
 
-### 3. Trade Execution & Post-Trade Reflection
-
+### Trade Execution & Self-Reflection
 ![Trade Execution](assets/screenshots/14.png)
 
-**What this shows:**
-- On-chain trade execution details
-- Asset pair, amount, block number
-- Transaction hash
-- Oracle-validated execution status
-- **Post-trade AI reflection**, including:
-  - Execution outcome
-  - Slippage validation
-  - Strategy adjustment notes
-
-This demonstrates **learning-aware execution**, not blind trading.
+On-chain execution with oracle validation and post-trade AI evaluation — rare even in production systems.
 
 ---
 
-### 4. Risk Control & Governance
-
+### Risk Control & Governance
 ![Risk Control](assets/screenshots/15.png)
 
-**What this shows:**
-- Kill-switch state (Inactive / Armed)
-- Daily loss tracking
-- Consecutive failure counter
-- Vault health status
-
-Every trade passes through this layer before execution.  
-If constraints are violated, the system **halts automatically**.
+Kill-switch, loss tracking, and vault health — autonomy without recklessness.
 
 ---
 
-### 5. Performance & System Metrics
+### Performance Metrics
+![Performance](assets/screenshots/11.png)
 
-![Performance Metrics](assets/screenshots/11.png)
-
-**What this shows:**
-- Total trades executed
-- Average cycle time
-- Success rate tracking
-- Gas efficiency indicators
-
-This provides **operational transparency**, critical for autonomous systems.
+Operational transparency: cycle speed, execution count, and system health.
 
 ---
 
-## Smart Contract Layer
+## Why This Is Not “Just a Trading Bot”
 
-- **Vault Contract**
-  - Manages multi-asset capital
-  - Enforces balance and exposure constraints
-
-- **Executor Contract**
-  - Executes trades on-chain
-  - Validates oracle price data before execution
-
-All contracts are deployed on **QIE Testnet** and interact directly with the backend agent.
+| Typical Bot | QIE Sentinel |
+|------------|-------------|
+| Scripted rules | Confidence-driven AI decisions |
+| Manual risk control | Enforced pre-trade governance |
+| Off-chain reasoning | On-chain execution proof |
+| No learning loop | Post-trade reflection |
+| Demo-only | Live autonomous operation |
 
 ---
 
-## Backend Engine
+## Hackathon Track Alignment
 
-- **Node.js Orchestrator**
-  - Trading cycle control
-  - Pre-trade validation
-  - Risk enforcement
-  - On-chain interaction
+### AI × Blockchain
+Autonomous AI agents operating *directly on decentralized infrastructure*.
 
-- **Python AI Module**
-  - Signal generation
-  - Confidence scoring
-  - Strategy evaluation
+### DeFi Without Borders
+Permissionless capital operation without centralized control.
 
-- **Risk Manager**
-  - Kill-switch logic
-  - Exposure limits
-  - Failure handling
+### Oracles & Real-World Data
+Oracle-validated execution prevents manipulation and slippage abuse.
+
+### QIE Performance
+High-frequency autonomous cycles enabled by QIE’s speed and cost profile.
+
 
 ---
 
-## Frontend Control Plane
+## Current Status
 
-The frontend is **not a marketing UI**.  
-It is a **monitoring and governance console** designed for:
+- ✅ Live autonomous agent
+- ✅ Real on-chain trades executed
+- ✅ Oracle-validated pricing
+- ✅ Continuous risk enforcement
+- ✅ Transparent decision intelligence
+- ✅ Frontend governance console
 
-- Real-time visibility into AI decisions
-- Trust through transparency
-- Debugging and validation of autonomous behavior
+**This project does not ask “can AI trade on-chain?”**  
+It answers: *“Here is how it safely already does.”*
 
 ---
 
-## Repository Structure
+## Final Note to Judges
 
+QIE Sentinel is less about trading performance  
+and more about **what becomes possible when AI, oracles, and fast blockchains converge**.
+
+This is infrastructure for:
+- Autonomous funds
+- On-chain agents
+- Self-governing protocols
+
+Trading is the first use case — not the last.
+
+---
+
+**License:** MIT  
+**Network:** QIE Testnet  
+**Category:** AI × Blockchain / DeFi Without Borders  
+**Status:** Live & Operational
