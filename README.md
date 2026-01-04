@@ -58,7 +58,7 @@ Built for the **QIE Blockchain Hackathon 2025**, this project demonstrates how a
 
 ### 1. System Status & Agent Lifecycle
 
-![System Status](assets/screenshots/system-status.png)
+![System Status](assets/screenshots/12.png)
 
 **What this shows:**
 - Autonomous agent is **RUNNING**
@@ -77,7 +77,7 @@ This confirms the agent is **actively operating**, not idle or simulated.
 
 ### 2. Decision Intelligence (AI Reasoning)
 
-![Decision Intelligence](assets/screenshots/decision-intelligence.png)
+![Decision Intelligence](assets/screenshots/13.png)
 
 **What this shows:**
 - AI-generated BUY/SELL signals
@@ -94,7 +94,7 @@ This is the **core AI layer**, making decisions independently — not hardcoded 
 
 ### 3. Trade Execution & Post-Trade Reflection
 
-![Trade Execution](assets/screenshots/trade-execution.png)
+![Trade Execution](assets/screenshots/14.png)
 
 **What this shows:**
 - On-chain trade execution details
@@ -112,7 +112,7 @@ This demonstrates **learning-aware execution**, not blind trading.
 
 ### 4. Risk Control & Governance
 
-![Risk Control](assets/screenshots/risk-control.png)
+![Risk Control](assets/screenshots/15.png)
 
 **What this shows:**
 - Kill-switch state (Inactive / Armed)
@@ -127,7 +127,7 @@ If constraints are violated, the system **halts automatically**.
 
 ### 5. Performance & System Metrics
 
-![Performance Metrics](assets/screenshots/performance.png)
+![Performance Metrics](assets/screenshots/11.png)
 
 **What this shows:**
 - Total trades executed
