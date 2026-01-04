@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "description": "Trading strategy configuration registry",
+  "strategies": [
+    {
+      "id": 1,
+      "name": "RSI + SMA Crossover",
+      "type": "technical_indicators",
+      "enabled": true,
+      "parameters": {
+        "rsi_period": 14,
+        "rsi_oversold": 30,
+        "rsi_overbought": 70,
+        "sma_fast": 5,
+        "sma_slow": 10,
+        "momentum_threshold": 3.0
+      },
+      "description": "Uses RSI for overbought/oversold and SMA crossover for trend confirmation"
+    },
+    {
+      "id": 2,
+      "name": "Volatility Breakout (Bollinger Bands)",
+      "type": "volatility",
+      "enabled": true,
+      "parameters": {
+        "period": 20,
+        "std_dev_multiplier": 2.0,
+        "breakout_threshold": 0.8,
+        "volume_confirmation": false
+      },
+      "description": "Bollinger Band breakout strategy - buy on lower band touch, sell on upper band touch"
+    },
+    {
+      "id": 3,
+      "name": "Momentum Trend Following (MACD-style)",
+      "type": "momentum",
+      "enabled": true,
+      "parameters": {
+        "fast_ema": 12,
+        "slow_ema": 26,
+        "signal_line": 9,
+        "histogram_threshold": 0.5
+      },
+      "description": "MACD-style momentum strategy with EMA crossovers and histogram analysis"
+    }
+  ],
+  "defaultStrategy": 1,
+  "notes": [
+    "Strategy ID must match Executor.sol strategyId parameter",
+    "Backend selects strategy based on config or market conditions",
+    "Multiple strategies can be enabled simultaneously for comparison"
+  ]
+}

@@ -1,0 +1,72 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+sentinel-frontend/.env
+sentinel-frontend/.env.*
+
+# Dependencies
+node_modules/
+sentinel-frontend/node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Hardhat
+cache/
+artifacts/
+typechain-types/
+
+# Logs & runtime artifacts
+logs/
+backend/node/logs/
+backend/node/data/
+backend/node/backups/
+*.log
+*.tmp
+*.bak
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+out/
+
+# Testing
+coverage/
+.nyc_output/
+
+# AI Models (large files)
+models/*.h5
+models/*.pkl
+models/*.pt
+
+# Frontend (will be added separately)
+frontend/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Secrets
+*.pem
+*.key
+secrets/

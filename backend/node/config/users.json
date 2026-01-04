@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "description": "User configuration for multi-user trading automation",
+  "users": [
+    {
+      "id": "user_001",
+      "walletAddress": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "name": "Primary Trader",
+      "enabledTokens": ["BTC_USDT", "ETH_USDT", "GOLD_USDT"],
+      "strategies": [1, 2, 3],
+      "status": "active",
+      "balanceCache": {},
+      "riskProfile": "moderate",
+      "maxDailyLoss": 5.0,
+      "maxPositionSize": 100.0,
+      "tradingEnabled": true
+    }
+  ],
+  "notes": [
+    "Each user can trade independently with separate configs",
+    "Backend iterates over active users in trading loop",
+    "balanceCache updated periodically to avoid excessive RPC calls",
+    "status values: active, paused, disabled"
+  ]
+}

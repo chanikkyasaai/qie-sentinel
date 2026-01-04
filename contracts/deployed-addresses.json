@@ -1,0 +1,8 @@
+{
+  "vault": "0xf06621e7fCC72bD117c723bd030b0E34819E5a07",
+  "router": "0x818C706F59822CC76a66736D2931d6b6594eA007",
+  "executor": "0xB00d0862ae49F5Fcf78c6C8EE3ca16581B122628",
+  "authorizedExecutor": "0xcFfB2cfA9c9df9FB594067F326f3aB68dd5b1AAB",
+  "network": "qie-testnet",
+  "deployedAt": "2026-01-04T04:10:05.466Z"
+}

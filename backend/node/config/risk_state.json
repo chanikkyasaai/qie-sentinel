@@ -1,0 +1,11 @@
+{
+  "killSwitchActive": false,
+  "consecutiveFailures": 0,
+  "dailyLoss": 0,
+  "lossStreak": 0,
+  "lastTradeTimestamps": {
+    "default_undefined": 1767525325436
+  },
+  "lastResetDate": "2026-01-04",
+  "tradeCount": null
+}

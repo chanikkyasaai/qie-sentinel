@@ -1,0 +1,73 @@
+{
+  "version": "1.0.0",
+  "description": "Centralized configuration for QIE Sentinel backend",
+  "network": {
+    "rpcUrl": "https://rpc1testnet.qie.digital/",
+    "chainId": 1983,
+    "networkName": "qie-testnet"
+  },
+  "contracts": {
+    "vaultAddress": "0xf06621e7fCC72bD117c723bd030b0E34819E5a07",
+    "executorAddress": "0xB00d0862ae49F5Fcf78c6C8EE3ca16581B122628",
+    "routerAddress": "0x818C706F59822CC76a66736D2931d6b6594eA007"
+  },
+  "trading": {
+    "pollingIntervalSeconds": 15,
+    "enableAutoTrading": true,
+    "rotateAssets": true,
+    "maxTradesPerCycle": 1,
+    "minTimeBetweenTradesSeconds": 600,
+    "autoFunding": {
+      "enabled": false,
+      "checkBeforeStartup": true,
+      "defaultDepositAmount": "10",
+      "defaultAllowanceAmount": "10",
+      "minBalanceThreshold": "1"
+    }
+  },
+  "risk": {
+    "enableKillSwitch": true,
+    "maxConsecutiveFailures": 3,
+    "maxDailyLossPercent": 5,
+    "maxSlippageBps": 1000,
+    "enableLossStreakProtection": true,
+    "maxLossStreak": 5,
+    "enableOvertradingProtection": true
+  },
+  "oracle": {
+    "enableValidation": true,
+    "maxPriceStalenessSeconds": 3600,
+    "deviationToleranceBps": 500
+  },
+  "python": {
+    "enginePath": "../python/signal_engine.py",
+    "pythonExecutable": "python",
+    "autoRestartOnCrash": true,
+    "restartDelaySeconds": 5,
+    "maxRestartAttempts": 10
+  },
+  "logging": {
+    "level": "info",
+    "enableFileLogging": true,
+    "enableConsoleLogging": true,
+    "logDirectory": "./logs",
+    "enablePerformanceMetrics": true
+  },
+  "database": {
+    "type": "json",
+    "enableMongoDB": false,
+    "mongoUri": "",
+    "useFileCache": true
+  },
+  "backtesting": {
+    "enabled": false,
+    "dataPath": "./backtest/data",
+    "outputPath": "./backtest/results"
+  },
+  "debug": {
+    "enableVerboseLogging": false,
+    "logPriceHistory": false,
+    "logAISignals": true,
+    "simulateMode": false
+  }
+}
